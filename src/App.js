@@ -1,10 +1,10 @@
 
 import './App.css';
-
+import Main from "./Components/Main"
 function App() {
   return (
     <div className="App">
-      <h2 className="text-center">Nazrul islam sajeeb</h2>
+      <Main />
     </div>
   );
 }
