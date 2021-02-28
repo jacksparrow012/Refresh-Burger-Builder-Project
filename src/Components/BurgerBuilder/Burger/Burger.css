@@ -8,10 +8,10 @@
     font-size: 1.2rem;
 }
 
-.Burger::-webkit-scrollbar{
+/* .Burger::-webkit-scrollbar{
     display:none;
-}
-.Burger{
+} */
+/* .Burger{
     -ms-overflow-style:none;
     scrollbar-width: none;
-}
+} */
