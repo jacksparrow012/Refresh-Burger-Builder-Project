@@ -10,9 +10,21 @@
 .NavLink{
     text-decoration: none;
     color: white;
-    font-size: 25px;
+    font-size: 20px;
     margin-top: -25px;
+    margin-left: 5px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    border: 2px solid #D70F64;
+    border-radius :5px;
+    background-color: white;
+    padding: 10px;
+    color: black;
 }
 .NavLink:hover{
-    color:wheat;
+   
+}
+.active{
+  
+    color:blue
+
 }

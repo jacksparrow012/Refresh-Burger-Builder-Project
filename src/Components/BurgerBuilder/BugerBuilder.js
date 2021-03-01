@@ -34,6 +34,9 @@ class BugerBuilder extends Component {
         })
 
     }
+    handleCheckout = () => {
+        this.props.history.push("/checkout")
+    }
     addIngredientHandle = type => {
         const ingredients = [...this.state.ingredients]
         const newPrice = this.state.totalPrice + INGREDIENT_PRICES[type]
@@ -79,7 +82,7 @@ class BugerBuilder extends Component {
                     <ModalFooter>
                         <Button style={{
                             backgroundColor: "#D70F64"
-                        }}>Continue To Checkout</Button>
+                        }} onClick={this.handleCheckout}>Continue To Checkout</Button>
                         <Button color="secondary" onClick={this.toggleModal}>Cancel</Button>
                     </ModalFooter>
                 </Modal>
