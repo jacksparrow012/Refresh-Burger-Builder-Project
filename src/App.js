@@ -2,7 +2,7 @@ import { BrowserRouter } from "react-router-dom"
 import './App.css';
 import Main from "./Components/Main"
 import { Provider } from "react-redux";
-import { store } from "./redux/store";
+import { store } from "./Redux/Store";
 function App() {
   return (
     <div className="App">
