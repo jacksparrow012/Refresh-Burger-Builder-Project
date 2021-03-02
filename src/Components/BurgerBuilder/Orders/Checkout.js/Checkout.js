@@ -55,7 +55,7 @@ class Checkout extends Component {
                         modalMsg: "Order Successfully Placed"
                     })
                     this.props.resetIngredient()
-                    console.log(response);
+                    // console.log(response);
                 } else {
                     this.setState({
                         isLoading: false,

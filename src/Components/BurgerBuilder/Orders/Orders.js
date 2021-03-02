@@ -21,7 +21,7 @@ class Orders extends Component {
         this.props.fetchOrders()
     }
     componentDidUpdate() {
-        console.log(this.props);
+        // console.log(this.props);
     }
     render() {
         let orders = null;
