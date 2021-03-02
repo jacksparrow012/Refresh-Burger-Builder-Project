@@ -33,3 +33,18 @@ export const auth = (email, password, mode) => dispatch => {
         })
 
 }
+
+export const authCheck = () => dispatch => {
+    const token = localStorage.getItem("token")
+    if (!token) {
+        /// Log Out
+    } else {
+        const expirationTime = new Date(localStorage.getItem("expirationTime"))
+        if (expirationTime <= new Date()) {
+            ///Log Out
+        } else {
+            const userId = localStorage.getItem("userId")
+            dispatch(authSuccess(token, userId));
+        }
+    }
+}
