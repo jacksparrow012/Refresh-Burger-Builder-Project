@@ -25,6 +25,10 @@ export const auth = (email, password, mode) => dispatch => {
     const API_KEY = "AIzaSyBLq8s3DVjh6Y2TBg6iTAdymvyDN2bgoaU"
     axios.post(authUrl + API_KEY, authData)
         .then(response => {
+            localStorage.setItem("token", response.data.idToken);
+            localStorage.setItem("userId", response.data.localId);
+            const expirationTime = new Date(new Date().getTime() + response.data.expiresIn * 1000)
+            localStorage.setItem("expirationTime", expirationTime)
             dispatch(authSuccess(response.data.idToken, response.data.localId));
         })
 
