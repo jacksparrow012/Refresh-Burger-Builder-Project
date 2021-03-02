@@ -16,7 +16,7 @@ const Header = () => {
                 backgroundColor: "#D70F64",
                 height: "70px"
             }}>
-                <NavbarBrand href="/" className="mr-auto ml-md-5 Brand" >
+                <NavbarBrand href="/" className="mr-auto ml-md-5 Brand  	 d-none d-sm-block" >
                     <img src={Logo} alt="logo" width="80px" />
                 </NavbarBrand>
                 <Nav className="mr-md-5">
@@ -25,6 +25,9 @@ const Header = () => {
                     </NavItem>
                     <NavItem>
                         <NavLink exact to="/orders" className="NavLink">Orders</NavLink>
+                    </NavItem>
+                    <NavItem>
+                        <NavLink exact to="/login" className="NavLink">Log In</NavLink>
                     </NavItem>
                 </Nav>
             </Navbar>
