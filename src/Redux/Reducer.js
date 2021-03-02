@@ -84,6 +84,12 @@ export const reducer = (state = INITIAL_STATE, action) => {
                 orderErr: true,
                 orderLoading: false
             }
+        case actionTypes.AUTH_SUCCESS:
+            return {
+                ...state,
+                token: action.payload.token,
+                userId: action.payload.userId
+            }
         default:
             return state
     }
